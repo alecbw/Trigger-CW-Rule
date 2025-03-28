@@ -5,7 +5,7 @@ import argparse
 
 if __name__ == "__main__":
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('-unformatted_input', required=True, help="One string delimited by backticks")
+    argparser.add_argument('-unformatted_input', required=True, help="The CloudWatch Rule name (_not_ ARN) as a string")
     args = argparser.parse_args()
     cw_rule_name = args.unformatted_input
 
